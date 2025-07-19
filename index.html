@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vrinda Tax Consultancy</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#calculator">Calculator</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#hacks">Tax Hacks</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="hero">
+  <h1 class="fade">Stress‑Free Tax & Accounting</h1>
+  <p class="fade">For entrepreneurs & families across Tricity</p>
+  <button class="cta fade" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book a Free Call</button>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title fade">What We Do</h2>
+    <div class="services-grid">
+      <div class="card fade"><h3>ITR Filing</h3><p>End‑to‑end income‑tax return with maximum deductions.</p></div>
+      <div class="card fade"><h3>GST Compliance</h3><p>Registrations, invoices & monthly GSTR filings without headaches.</p></div>
+      <div class="card fade"><h3>Bookkeeping</h3><p>Cloud ledgers updated weekly; live dashboard for you.</p></div>
+      <div class="card fade"><h3>Payroll & TDS</h3><p>Payslips, PF/ESI and TDS deposits handled on time, every time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="calculator">
+  <div class="container">
+    <h2 class="section-title fade">Quick Income‑Tax Estimator</h2>
+    <div class="calculator-box fade">
+      <input type="number" id="income" placeholder="Annual taxable income (₹)"/>
+      <button onclick="runCalc()">Calculate</button>
+      <div id="calc-out"></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <h2 class="section-title fade">Client Stories</h2>
+    <div class="testimonials">
+      <div class="card fade"><p>“I used to dread July. Now my returns are filed before June ends.”</p><span>– Neha, Freelancer</span></div>
+      <div class="card fade"><p>“Their GST team caught ₹80k in missed input credit. Huge win!”</p><span>– Akash, Café Owner</span></div>
+      <div class="card fade"><p>“Noticed response times under an hour, even on Sundays.”</p><span>– Ritu, Designer</span></div>
+      <div class="card fade"><p>“They represented us in a scrutiny notice—closed in one hearing.”</p><span>– S. Kumar, Retailer</span></div>
+      <div class="card fade"><p>“Love the weekly bookkeeping summaries on WhatsApp.”</p><span>– Dr. Manjit, Clinic Director</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="hacks">
+  <div class="container">
+    <h2 class="section-title fade">Little‑Known Tax Hacks</h2>
+    <div class="hacks-grid">
+      <div class="card fade">Claim an 80TTA deduction (₹10k) on savings‑account interest—most people forget.</div>
+      <div class="card fade">Bought health insurance for parents? Section 80D lets you deduct an extra ₹25k‑₹50k.</div>
+      <div class="card fade">Renting and no HRA? Use Section 80GG to still claim rent up to ₹60k per year.</div>
+      <div class="card fade">Interest on education loans is fully deductible under Section 80E for 8 years.</div>
+      <div class="card fade">Use ELSS mutual funds: 3‑year lock‑in + lowest 80C lock period + potential equity gains.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title fade">Ready to Chat?</h2>
+    <div class="contact-card fade">
+      <p><strong>Call / WhatsApp:</strong> <a href="tel:+919779463824">+91 97794 63824</a></p>
+      <p><strong>Email:</strong> <a href="mailto:consultantvrinda@gmail.com">consultantvrinda@gmail.com</a></p>
+      <div style="margin-top:24px">
+        <div class="calendly-inline-widget" data-url="https://calendly.com/consultantvrinda" style="min-width:280px;height:620px;border-radius:var(--radius);overflow:hidden"></div>
+        <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2025 Vrinda Tax Consultancy. All rights reserved.</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
