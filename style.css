@@ -57,3 +57,17 @@ button.cta:hover{transform:translateY(-3px)}
 footer{background:var(--primary);color:#fff;text-align:center;padding:24px;font-size:.9rem;margin-top:60px}
 .fade{opacity:0;transform:translateY(30px);transition:all .6s ease}
 .fade.show{opacity:1;transform:none}
+/* ADD this near the end of style.css */
+@media(max-width:768px){
+  nav{
+    overflow-x:auto;          /* enable horizontal scroll */
+    white-space:nowrap;       /* keep links on one line */
+    scrollbar-width:none;     /* Firefox – hide scrollbar */
+  }
+  nav::-webkit-scrollbar{display:none;} /* Chrome/Safari – hide */
+  nav a{
+    flex:0 0 auto;            /* don’t shrink, keep width */
+    font-size:0.95rem;        /* slightly smaller text */
+    padding:12px 16px;        /* tighter padding */
+  }
+}
